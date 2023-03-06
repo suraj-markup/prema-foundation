@@ -772,6 +772,7 @@ body.dark-theme {
     position: fixed;
     z-index: 999;
     top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -779,6 +780,7 @@ body.dark-theme {
     height: 100vh;
     display: none;
     background-color: rgba(17, 17, 17, 0.6);
+    margin: auto;
 }
 
 .popup__active {
@@ -786,13 +788,14 @@ body.dark-theme {
 }
 
 .bar {
-    background-color: rgb(46, 46, 60);
+    background-color: rgb(67, 67, 94);
     border-radius: 0.5rem;
     padding: 0.4rem 1rem;
+    color: #d0d0d0;
 }
 
 .popup .popup_cont {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(0, 0, 51);
     padding: 3rem;
     border-radius: 1.25rem;
     margin: auto;
@@ -819,7 +822,6 @@ body.dark-theme {
 
 @media screen and (max-width: 768px) {
     .popup .popup_cont {
-        background-color: rgb(11, 12, 21);
         padding: 3rem;
         border-radius: 1.25rem;
         margin: auto;
