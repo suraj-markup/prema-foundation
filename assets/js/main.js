@@ -139,3 +139,18 @@ sr.reveal('.home__imgages', { delay: 800, origin:'bottom'})
 sr.reveal('.logos__img', {interval: 100})
 sr.reveal('.value__images, .contact__content', {origin: 'left'})
 sr.reveal('.value__content, .contact__images', {origin: 'right'})
+
+
+const subscribe_btn = document.querySelector('.subscribe__button');
+const popup = document.querySelector('.popup');
+const close_btn = document.querySelector('.popup__close');
+
+subscribe_btn.addEventListener('click', () => {
+  popup.classList.add('popup__active');
+  document.body.style.overflow = 'hidden';
+})
+
+close_btn.addEventListener('click', () => {
+  popup.classList.remove('popup__active');
+  document.body.style.overflow = 'auto';
+})

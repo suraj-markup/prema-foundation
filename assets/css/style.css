@@ -220,7 +220,7 @@ body.dark-theme {
     position: fixed;
     top: 0;
     left: 0;
-    width:100vw;
+    width: 100vw;
     background: transparent;
     z-index: var(--z-fixed);
     transition: .4s;
@@ -237,7 +237,7 @@ body.dark-theme {
 }
 
 .header__swipe .nav__logo svg path {
-    fill:coral;
+    fill: coral;
 }
 
 .header__swipe .change-theme {
@@ -767,6 +767,75 @@ body.dark-theme {
 .subscribe {
     padding: 2.5em 0;
 }
+
+.popup {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+.popup__active {
+    display: flex;
+}
+
+.bar {
+    background-color: rgb(46, 46, 60);
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+}
+
+.popup .popup_cont {
+    background-color: rgb(29, 29, 29);
+    padding: 3rem;
+    border-radius: 1.25rem;
+    margin: auto;
+    width: 30rem;
+}
+
+.popup_cont h3 {
+    color: var(--second-color);
+}
+
+.popup__close {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: white;
+}
+
+.popup_cont p {
+    margin-top: 0.5rem;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .popup .popup_cont {
+        background-color: rgb(11, 12, 21);
+        padding: 3rem;
+        border-radius: 1.25rem;
+        margin: auto;
+        width: 90%;
+    }
+
+    .popup_cont p {
+        font: 0.8rem;
+    }
+
+    .bar {
+        font-size: 0.8rem;
+    }
+}
+
+
 
 .subscribe__container {
     background-color: var(--first-color);
@@ -1514,12 +1583,13 @@ body.dark-theme {
         justify-content: space-between;
         align-items: flex-start;
     }
+
     .lists {
         margin-top: 2rem;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        gap:1rem;
+        gap: 1rem;
     }
 
 }
@@ -1548,7 +1618,9 @@ body.dark-theme {
         padding: 0;
         margin-bottom: 0;
         margin-top: 2rem;
+        font-size: 0.8rem;
     }
+
     .lists {
         margin-top: 2rem;
         display: flex;
