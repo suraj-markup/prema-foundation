@@ -50,6 +50,13 @@ accordionItems.forEach((item) =>{
   })
 })
 
+function downloadBrochure() {
+  const link = document.createElement('a');
+  link.href = './assets/design/Brochure.pdf'; // Replace with the actual path to the brochure file
+  link.download = 'Brochure.pdf'; // The name the file will be downloaded as
+  link.click();
+}
+
 const toggleItem = (item) =>{
   const accordionContent = item.querySelector('.value__accordion-content');
 
