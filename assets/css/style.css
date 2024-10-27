@@ -719,6 +719,9 @@ body.dark-theme {
     border-radius: .5rem;
     padding: 1.25em .75rem;
     transition: .3s;
+    overflow-wrap: anywhere;
+
+
 }
 
 .contact__card-box:hover {
@@ -744,7 +747,9 @@ body.dark-theme {
 }
 
 .contact__card-description {
-    font-size: .7rem;
+    font-size: .1rem;
+ 
+
 }
 
 .contact__card-button {
